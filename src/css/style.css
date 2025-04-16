@@ -25,8 +25,9 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 40px;
+    gap: 200px;
     top: 0;
+    padding-left: 150px;
 
 }
 
@@ -72,7 +73,7 @@ body {
     width: 100px;
     height: 40px;
     cursor: pointer;
-    background-color: #FFC107;
+    background-color: #eabb00;
     border-radius: 20px;
     border: none;
     color: #ffffff;
@@ -80,7 +81,7 @@ body {
 }
 
 .buy:hover {
-    background-color: #16a2ff;
+    background-color: #0073ff;
 
 }
 
@@ -89,7 +90,7 @@ body {
     width: 210px;
     height: 30px;
     border-radius: 20px;
-    background-color: #eab104;
+    background-color: #047fea;
     color: #fff;
     text-align: center;
     justify-content: center;
@@ -115,8 +116,6 @@ body {
     animation: modalOpen 0.4s ease;
     z-index: 999;
     top: 30px;
-    ;
-
 }
 
 
@@ -147,7 +146,7 @@ body {
     top: 0;
 }
 
-#modal-blur-bg {
+#modal_blur_bg {
     position: relative;
     top: 0;
     left: 0;
@@ -216,7 +215,7 @@ body {
     text-align: center;
     align-items: center;
     border: none;
-    background-color: #FFC107;
+    background-color: #eabb00;
     border-radius: 20px;
     cursor: pointer;
     top: 10px;
@@ -224,7 +223,7 @@ body {
 }
 
 .add_to_cart:hover {
-    background-color: #16a2ff;
+    background-color: #0073ff;
 }
 
 @keyframes modalOpen {
@@ -257,6 +256,7 @@ body {
     width: 150px;
     height: 150px;
 }
+
 
 
 .profile_dvider {
@@ -324,6 +324,10 @@ body {
     border: none;
     top: 5px;
     cursor: pointer;
+    color: black;
+}
+.close_btn:hover {
+    color: rgb(155, 155, 155);
 }
 
 .profile_contact label {
@@ -384,4 +388,8 @@ input {
     outline: none;
     border: 2px solid rgb(76, 243, 5);
     border-radius: 10px;
+}
+
+input:focus {
+    border: 2px solid rgb(13, 0, 255);
 }

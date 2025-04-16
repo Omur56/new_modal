@@ -44,6 +44,7 @@ const card_info = [
 for (let i = 0; i < 3; i++) {
   const card = document.createElement("div");
   card.classList.add("card");
+  
   card.innerHTML = `<div class="modal_content">
     
     </div>
@@ -85,7 +86,7 @@ for (let i = 0; i < 3; i++) {
             </div>
     </div>
     <div class="btn_dvider">
-    <button class="open">Open </button>
+    <button class="open">Open ${card_info[i].btn}</button>
     </div>
     </div>`;
 
@@ -122,8 +123,8 @@ for (let i = 0; i < 3; i++) {
   });
 }
 
-const section = document.getElementById("profile_section");
-const blurBg = document.getElementById("blurBg");
+const section = document.querySelector(".profile_section");
+const blurBg = document.querySelector(".blurBg");
 
 const profileInfo = [
   {
@@ -135,7 +136,7 @@ const profileInfo = [
 for (let i = 0; i < profileInfo.length; i++) {
   const profile = document.createElement("div");
   profile.classList.add("profile_dvider");
-  profile.style.display = "none"; // Başlanğıcda gizli olsun
+  profile.style.display = "none"; 
 
   profile.innerHTML = `
         <button class="close_btn">&#x2715; Close</button>
@@ -151,9 +152,9 @@ for (let i = 0; i < profileInfo.length; i++) {
             <a href="mailto:lorem@gmail.com">lorem@gmail.com</a><br>
             <a href="tel:+994555555555">+994555555555</a>
             <div class="social">
-                <img width="48" src="https://img.icons8.com/color/48/instagram-new--v1.png" />
-                <img width="48" src="https://img.icons8.com/fluency/48/facebook-new.png" />
-                <img width="48" src="https://img.icons8.com/color/48/linkedin.png" />
+                <img width="30" src="https://img.icons8.com/color/30/instagram-new--v1.png" />
+                <img width="30" src="https://img.icons8.com/fluency/30/facebook-new.png" />
+                <img width="30" src="https://img.icons8.com/color/30/linkedin.png" />
             </div>
             <div class="btn_contact">
                 <label>Name</label>
@@ -177,13 +178,13 @@ for (let i = 0; i < profileInfo.length; i++) {
   section.appendChild(openButton);
   section.appendChild(profile);
 
-  openButton.addEventListener("click", () => {
+  openButton.addEventListener("click", function () {
     profile.style.display = "block";
     blurBg.style.display = "block";
   });
 
   const closeButton = profile.querySelector(".close_btn");
-  closeButton.addEventListener("click", () => {
+  closeButton.addEventListener("click", function () {
     profile.style.display = "none";
     blurBg.style.display = "none";
   });
