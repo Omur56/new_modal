@@ -138,7 +138,10 @@ for (let i = 0; i < profileInfo.length; i++) {
   profile.innerHTML = `
         <button class="close_btn">&#x2715; Close</button>
         <div class="profile_img_divider">
-            <img class="profile_img" src="./public/bohemian-man-with-his-arms-crossed_1368-3542.avif">
+        
+ <img class="profile_img" src="./public/bohemian-man-with-his-arms-crossed_1368-3542.avif">
+        
+           
         </div>
         <div class="profile_info_divider">
             <h2>Lorem</h2>
