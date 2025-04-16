@@ -13,7 +13,6 @@ const card_info = [
     description: "JavaScript Kitabı",
     info: "JavaScript növləri və operatorları, standart daxili obyektləri və metodları olan çoxparadiqmalı, dinamik bir dildir . Onun sintaksisi Java və C dillərinə əsaslanır - bu dillərdən bir çox strukturlar JavaScript-ə də aiddir. JavaScript obyekt prototipləri və sinifləri ilə obyekt yönümlü proqramlaşdırmanı dəstəkləyir",
     btn: "JavaScript",
-    btn2: "",
   },
   {
     id: 2,
@@ -25,7 +24,6 @@ const card_info = [
     description: "HTML 5 Kitabı",
     info: "HTML (HyperText Markup Language) İnternetin ən əsas tikinti blokudur. Bu veb məzmunun mənasını və strukturunu müəyyən edir . HTML-dən başqa digər texnologiyalar ümumiyyətlə veb səhifənin görünüşünü/təqdimatını (CSS) və ya funksionallığı/davranışını (JavaScript) təsvir etmək üçün istifadə olunur",
     btn: "HTML 5",
-    btn2: "",
   },
   {
     id: 3,
@@ -37,14 +35,13 @@ const card_info = [
     description: "CSS Kitabı",
     info: "Cascading Style Sheets (CSS) HTML və ya XML-də (SVG, MathML və ya XHTML kimi XML dialektləri daxil olmaqla) yazılmış sənədin təqdimatını təsvir etmək üçün istifadə edilən üslub cədvəli dilidir . CSS elementlərin ekranda, kağızda, nitqdə və ya digər mediada necə göstərilməli olduğunu təsvir edir......",
     btn: "CSS",
-    btn2: "",
   },
 ];
 
 for (let i = 0; i < 3; i++) {
   const card = document.createElement("div");
   card.classList.add("card");
-  
+
   card.innerHTML = `<div class="modal_content">
     
     </div>
@@ -136,7 +133,7 @@ const profileInfo = [
 for (let i = 0; i < profileInfo.length; i++) {
   const profile = document.createElement("div");
   profile.classList.add("profile_dvider");
-  profile.style.display = "none"; 
+  profile.style.display = "none";
 
   profile.innerHTML = `
         <button class="close_btn">&#x2715; Close</button>

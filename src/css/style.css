@@ -116,6 +116,7 @@ body {
     animation: modalOpen 0.4s ease;
     z-index: 999;
     top: 30px;
+
 }
 
 
@@ -326,6 +327,7 @@ body {
     cursor: pointer;
     color: black;
 }
+
 .close_btn:hover {
     color: rgb(155, 155, 155);
 }
